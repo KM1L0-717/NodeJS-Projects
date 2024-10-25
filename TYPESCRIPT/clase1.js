@@ -11,6 +11,8 @@ function filterPairs(numbers) {
 }
 var numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 var pairs = filterPairs(numbers);
+console.log();
+console.log();
 console.log(pairs);
 //-----------------------------------------------------------
 function sumDiagonals(matrix) {
@@ -28,6 +30,8 @@ var matrix = [
     [7, 8, 9]
 ];
 var _a = sumDiagonals(matrix), diagonalPrincipal = _a.diagonalPrincipal, diagonalSecondary = _a.diagonalSecondary;
+console.log();
+console.log();
 console.log("Sum Diagonal Principal: ".concat(diagonalPrincipal));
 //-----------------------------------------------------------
 var Book = /** @class */ (function () {
@@ -37,6 +41,8 @@ var Book = /** @class */ (function () {
         this.year = year;
     }
     Book.prototype.showInfo = function () {
+        console.log();
+        console.log();
         console.log("Title: ".concat(this.title, ", Author: ").concat(this.author, ", Year: ").concat(this.year));
     };
     Book.prototype.isMoreRecentThan = function (anotherBook) {
@@ -62,6 +68,8 @@ var filePath = './products.json';
 var products = readJsonFile(filePath);
 products[0].price = 99.99;
 writeJsonFile(filePath, products);
+console.log();
+console.log();
 console.log('File updated successfully.');
 function sortByAge(people) {
     return people.sort(function (a, b) { return a.age - b.age; });
@@ -72,4 +80,6 @@ var people = [
     { name: "Louis", age: 35 }
 ];
 var peopleOrdered = sortByAge(people);
+console.log();
+console.log();
 console.log(peopleOrdered);

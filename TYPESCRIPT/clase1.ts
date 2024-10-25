@@ -11,6 +11,9 @@ function filterPairs(numbers: number[]): number[] {
     return numbers.filter(num => num % 2 === 0);
 } const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 const pairs = filterPairs(numbers);
+
+console.log()
+console.log()
 console.log(pairs);
 
 //-----------------------------------------------------------
@@ -34,6 +37,9 @@ const matrix = [
 ]
 
 const { diagonalPrincipal, diagonalSecondary } = sumDiagonals(matrix);
+
+console.log()
+console.log()
 console.log(`Sum Diagonal Principal: ${diagonalPrincipal}`);
 
 //-----------------------------------------------------------
@@ -50,6 +56,8 @@ class Book {
     }
 
     showInfo(): void {
+        console.log()
+        console.log()
         console.log(`Title: ${this.title}, Author: ${this.author}, Year: ${this.year}`);
     }
 
@@ -62,6 +70,7 @@ const book1 = new Book("One Hundred Years of Solitude", "Gabriel García Márque
 const book2 = new Book("Don Quixote", "Miguel de Cervantes", 1605);
 
 book1.showInfo();
+
 console.log(book1.isMoreRecentThan(book2));
 
 //-----------------------------------------------------------
@@ -92,6 +101,8 @@ products[0].price = 99.99;
 
 writeJsonFile(filePath, products);
 
+console.log()
+console.log()
 console.log('File updated successfully.');
 
 //-----------------------------------------------------------
@@ -112,4 +123,7 @@ const people: Person[] = [
 ]
 
 const peopleOrdered = sortByAge(people);
+
+console.log()
+console.log()
 console.log(peopleOrdered)
